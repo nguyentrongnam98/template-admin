@@ -21,5 +21,5 @@ COPY . .
 # build production app w/ webpack
 # RUN ["npm", "build"]
 # EXPOSE 80
-EXPOSE 3005
+EXPOSE 3000
 CMD ["npm", "start" ]
