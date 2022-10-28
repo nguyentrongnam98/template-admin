@@ -27,6 +27,7 @@ import ScrollTop from "./ScrollTop";
 import { useForm, Controller, useController } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { GridExample } from "./AgGird";
 
 const validator = () => {
   return yupResolver(
@@ -627,13 +628,14 @@ export default function Form() {
           </Box>
         </Box>
         <Box style={{ marginTop: "15px", height: "400px", marginLeft: "20px" }}>
-          <DataGrid
+          {/* <DataGrid
             rows={rows}
             columns={columns}
             pageSize={5}
             rowsPerPageOptions={[5]}
             checkboxSelection
-          />
+          /> */}
+          <GridExample/>
         </Box>
         <Box style={{ marginTop: "50px" }}>
           <ScrollTop>
